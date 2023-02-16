@@ -1,0 +1,12 @@
+type Query {
+    getName: String!
+    getBalance(address: String!): String!
+    getTotalSupply: String!
+}
+
+type Mutation {
+    mintToken(tokenId: Int!, uri: String!): String!
+    listNFT(tokenId: Int!): String!
+    cancelNFT(tokenId: Int!): String!
+    buy(tokenId: Int!): String!
+}
